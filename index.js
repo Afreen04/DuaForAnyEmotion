@@ -194,14 +194,31 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('NewSession');
+        if(this.event.request.type() == "IntentRequest")
+            this.emit(this.event.request.type());
+        console.log("tHIS THING ");
+        console.log(this.event.request.type());
+        this.emit('GetNewDuaIntent');
     },
     'GetNewDuaIntent': function () {
         this.emit('GetDua');
     },
     'NewSession': function() {
         
-            this.emit(':ask', welcomeMessage, repeatWelcomeMessage);
+            
+            //this.emit('GetDua');
+            console.log("tHIS THING ");
+            console.log(this.event.request.type);
+            if(this.event.request.type == "IntentRequest")
+                {        console.log("Intent request type detected succesfully");
+                this.emit(this.event.request.intent.name);
+                }
+            else
+                this.emit(':ask', welcomeMessage, repeatWelcomeMessage);
+            
+
+            
+
         
     },
 
