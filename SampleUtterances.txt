@@ -1,0 +1,28 @@
+GetNewDuaIntent a dua
+GetNewDuaIntent get me a dua
+GetNewDuaIntent tell me a dua
+GetNewDuaIntent get me a random dua
+GetNewDuaIntent tell me a random dua
+GetNewDuaIntent random dua
+
+getSpecificDuaIntent get me a dua for {emotion}
+getSpecificDuaIntent get me dua for {emotion}
+getSpecificDuaIntent tell me a dua for {emotion}
+getSpecificDuaIntent tell me dua for {emotion}
+getSpecificDuaIntent dua for {emotion}
+
+getSpecificDuaIntent get me a dua for feeling {emotion}
+getSpecificDuaIntent get me a dua for being {emotion}
+getSpecificDuaIntent get me dua for feeling {emotion}
+getSpecificDuaIntent get me dua for being {emotion}
+getSpecificDuaIntent tell me a dua for feeling {emotion}
+getSpecificDuaIntent tell me a dua for being {emotion}
+getSpecificDuaIntent tell me dua for feeling {emotion}
+getSpecificDuaIntent dua for feeling {emotion}
+getSpecificDuaIntent tell me dua for being {emotion}
+getSpecificDuaIntent dua for being {emotion}
+
+
+goodbyeIntent goodbye
+goodbyeIntent bye
+goodbyeIntent bye bye

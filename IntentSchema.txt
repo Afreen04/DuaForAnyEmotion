@@ -1,0 +1,29 @@
+{
+  "intents": [
+    {
+      "intent": "GetNewDuaIntent"
+    },
+    {
+      "intent":"goodbyeIntent",
+        "slots":[]
+    },
+    {
+      "intent": "getSpecificDuaIntent",
+      "slots" :[
+        {
+          "name" : "emotion",
+          "type": "LIST_OF_EMOTIONS"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
